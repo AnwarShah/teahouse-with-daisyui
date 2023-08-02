@@ -10,7 +10,14 @@
     <!-- tailwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4c39ba2e2d.js" crossorigin="anonymous"></script>
 
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
     <!-- customize colors -->
     <script>
         tailwind.config = {
@@ -18,14 +25,40 @@
             extend: {
             colors: {
                 clifford: '#da373d',
+                grayy: '#777',
             }
             }
         }
         }
     </script>
 </head>
-<body>
-    <header></header>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div class="max-w-2xl">
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br> 
+                        tea time at The <br>
+                        Tea House
+                    </h1>
+                    <p class="py-6 text-lg font-medium text-grayy">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary bg-gradient-to-l from-[#f00] to-[#FF8938]">Explore Now!</button>
+                </div>
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <!-- ratings badge -->
+                    <div class="-mt-24 ml-10 p-5 w-60 flex items-center bg-white gap-4 rounded-xl drop-shadow-lg">
+                        <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">5.00</h3>
+                            <p class="text-base font-semibold text-grayy">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
